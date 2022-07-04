@@ -6,10 +6,85 @@
 }
 a{
     text-decoration: none;
+    display: inline-block;
 }
 ul{
     list-style-type: none;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    color: #1f1f1f;
+}
+
+#portfolio_intro.first{
+    position: relative;
+}
+#portfolio_intro.first .round{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #7FD9FF;
+    border-radius: 50%;
+    top: -70px;
+    left: -70px;
+}
+#portfolio_intro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#portfolio_intro .intro_item{
+    width: 50%;
+}
+#portfolio_intro .intro_item.pf_text{
+    padding-left: 40px;
+}
+#portfolio_intro .intro_item h1{
+    font-family: 'Fredoka One';
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+#portfolio_intro .intro_item h1 span{
+    color: #7FD9FF;
+}
+#portfolio_intro .intro_item h3{
+    font-size: 25px;
+    font-weight: 700;
+}
+#portfolio_intro .intro_item p{
+    font-size: 15px;
+    color: #616161;
+    padding: 15px 0;
+    line-height: 20px;
+}
+#portfolio_intro .intro_item .linkin_btn a{
+    background-color: #7FD9FF;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+#portfolio_intro .intro_item.pf_image{
+    text-align: right;
+}
+#portfolio_intro .intro_item img{
+    width: 80%;
+}
+.secend{
+    position: relative;
+}
+.secend .shap{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-40%);
+    text-align: right;
+    z-index: -1;
+}
+.secend .shap img{
+    height: 300px;
 }
